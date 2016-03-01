@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidReview</string>
+    <string name="maina_state_save_btn">保存</string>
 </resources>
