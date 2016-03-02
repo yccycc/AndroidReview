@@ -5,4 +5,5 @@
     <string name="maina_state_add_btn">add</string>
     <string name="maina_state_del_btn">del</string>
     <string name="maina_state_modify_btn">modify</string>
+    <string name="title_activity_cont_pro_test">ContProTest</string>
 </resources>
