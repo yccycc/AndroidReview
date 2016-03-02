@@ -6,9 +6,6 @@ import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
-/**
- * Created by Administrator on 2016/3/2.
- */
 public class MyService extends Service
 {
 
