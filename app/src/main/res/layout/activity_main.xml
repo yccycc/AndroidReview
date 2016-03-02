@@ -18,4 +18,9 @@
         android:text="@string/maina_state_save_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/maina_state_select_btn"
+        android:text="@string/maina_state_select_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>
