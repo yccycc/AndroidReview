@@ -35,8 +35,10 @@ public class BroadCastTest extends Activity {
         setContentView(R.layout.activity_main);
         assignViews();
         IntentFilter intentFilter = new IntentFilter();
-        intentFilter.addAction("ycc_broad");   //为BroadcastReceiver指定action，使之用于接收同action的广播
-        registerReceiver(new MyBroadcastReceiver(), intentFilter);
+        intentFilter.addAction("ycc_broad");
+        MyBroadcastReceiver myBroadcastReceiver = new MyBroadcastReceiver();
+        registerReceiver(myBroadcastReceiver, intentFilter);
+        registerReceiver(myBroadcastReceiver, intentFilter);
         mMainaStateSaveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,6 +54,14 @@ class  MyBroadcastReceiver extends BroadcastReceiver
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Log.i("sexybitch", "onReceive");
+        Log.i("sexybitch", "onReceive----0");
+    }
+}
+class  MyBroadcastReceiver1 extends BroadcastReceiver
+{
+
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        Log.i("sexybitch", "onReceive--1");
     }
 }
