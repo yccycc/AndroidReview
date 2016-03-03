@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".DbNoUseHelper" />
-        <activity android:name="yc.com.acticityt.CircleActivity">
+        <activity android:name="yc.com.acticityt.MultiReferences">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,8 +29,8 @@
             android:authorities="com.wissen.MyContentProvider"
             android:enabled="true"
             android:exported="true" />
-        <activity android:name=".MainActivity"/>
 
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

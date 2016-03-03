@@ -10,6 +10,9 @@ import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.Toast;
+
+
 
 import yc.com.androidreview.MainActivity;
 import yc.com.androidreview.R;
@@ -51,19 +54,20 @@ public class CircleActivity extends Activity
                     @Override
 					public void onClick(DialogInterface dialog, int which)
 					{
-
+                        Log.i("bitch2","是");
 					}
-				}).setNegativeButton("否", new AlertDialog.OnClickListener()
+				}).setNegativeButton("否", new DialogInterface.OnClickListener()
 				{
 					@Override
 					public void onClick(DialogInterface dialog, int which)
 					{
+                        Log.i("bitch2","否");
 					}
 				});
 
 				AlertDialog ad = builder.create();
-				ad.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
-				ad.setCanceledOnTouchOutside(false);
+				//ad.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
+				ad.setCanceledOnTouchOutside(true);
 				ad.show();
 			}
 		});
@@ -73,7 +77,7 @@ public class CircleActivity extends Activity
                 startActivity(new Intent(CircleActivity.this, MainActivity.class));
             }
         });
-	}
+    }
 
 	@Override
 	protected void onStart()
