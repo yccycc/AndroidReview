@@ -11,15 +11,12 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:supportsRtl="true">
         <activity android:name=".DbNoUseHelper" />
-        <activity
-            android:launchMode="singleTask"
-            android:name=".ServiceTest">
+        <activity android:name="yc.com.fragmenttest.TestfActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <action android:name="myaa"/>
+                <action android:name="myaa" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -35,12 +32,13 @@
 
         <activity android:name=".MainActivity" />
         <activity
+            android:name="yc.com.launchmode.Bb"
             android:exported="true"
-            android:launchMode="singleInstance"
-            android:name="yc.com.launchmode.Bb">
+            android:launchMode="singleInstance">
             <intent-filter>
-                <action android:name="mybb"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="mybb" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>

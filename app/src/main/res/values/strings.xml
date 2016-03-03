@@ -6,4 +6,7 @@
     <string name="maina_state_del_btn">del</string>
     <string name="maina_state_modify_btn">modify</string>
     <string name="title_activity_cont_pro_test">ContProTest</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
