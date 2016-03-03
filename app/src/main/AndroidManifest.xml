@@ -14,9 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".DbNoUseHelper" />
-        <activity android:name="yc.com.acticityt.MultiReferences">
+        <activity
+            android:launchMode="singleTask"
+            android:name=".ServiceTest">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="myaa"/>
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -31,6 +34,15 @@
             android:exported="true" />
 
         <activity android:name=".MainActivity" />
+        <activity
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:name="yc.com.launchmode.Bb">
+            <intent-filter>
+                <action android:name="mybb"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

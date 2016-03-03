@@ -6,6 +6,7 @@ import android.os.Binder;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.lang.ref.SoftReference;
 
@@ -29,6 +30,7 @@ public class MyService extends Service
     @Override
     public void onCreate() {
         super.onCreate();
+        Toast.makeText(MyService.this,"from service",Toast.LENGTH_LONG).show();
         Log.i(tag, "onCreate()");
         new Thread(){
             @Override
